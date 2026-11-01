@@ -1,0 +1,4 @@
+- insert:
+    - id: openapi-diff
+      name: dsh-openapi-diff
+      config: {}
