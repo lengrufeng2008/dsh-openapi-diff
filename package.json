@@ -1,0 +1,15 @@
+{
+  "name": "dsh-openapi-diff",
+  "version": "0.1.0",
+  "description": "Structural OpenAPI JSON breaking-change check for DSH: paths, methods, parameters, required fields, responses, types.",
+  "type": "module",
+  "bin": { "dsh-openapi-diff": "bin/dsh-openapi-diff.mjs" },
+  "exports": { ".": "./plugin/index.js", "./diff": "./src/diff.mjs", "./plugin": "./plugin/index.js", "./icon": "./icon.svg" },
+  "files": ["bin", "src", "plugin", "skills", "icon.svg", "README.md", "NOTICE.md", "LICENSE"],
+  "dsh": { "bundle": { "patch": "./plugin/cordis.patch.yml" } },
+  "engines": { "node": ">=20" },
+  "keywords": ["dsh", "deepseek-harness", "openapi", "api", "breaking-change", "diff"],
+  "license": "MIT",
+  "scripts": { "test": "node --test test/*.test.mjs" },
+  "repository": { "type": "git", "url": "https://github.com/lengrufeng2008/dsh-openapi-diff" }
+}
